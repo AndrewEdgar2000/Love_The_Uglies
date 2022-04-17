@@ -1,5 +1,5 @@
 {
-  "name": "lab6userlogins",
+  "name": "lovetheuglies",
   "version": "1.0.0",
   "description": "A big monster of a lab",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
     "start": "NODE_ENV=production node ./dist/server.generated.js"
   },
-  "author": "Pam",
+  "author": "Andrew",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.4",
@@ -44,5 +44,13 @@
     "webpack-dev-middleware": "^5.3.1",
     "webpack-hot-middleware": "^2.25.1",
     "webpack-node-externals": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewEdgar2000/Love_The_Uglies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndrewEdgar2000/Love_The_Uglies/issues"
+  },
+  "homepage": "https://github.com/AndrewEdgar2000/Love_The_Uglies#readme"
 }
