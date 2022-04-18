@@ -6,5 +6,6 @@ const config = {
             process.env.MONGO_HOST ||
             'mongodb://' + (process.env.IP || 'localhost') + ':' + (process.env.MONGO_PORT || '27017')+'/mydb/'
 }
+console.log("🚀 ~ file: config.js ~ line 9 ~ config", config)
 
 export default config

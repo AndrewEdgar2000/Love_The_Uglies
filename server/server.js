@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 
 // Connection URL
 mongoose.Promise = global.Promise
-mongoose.connect(config.mongoUri, { dbName: "Love_The_Uglies" })
+mongoose.connect(config.mongoUri, { dbName: "users" })
 mongoose.connection.on('error', err => {
   throw new Error(`unable to connect to database: ${config.mongoUri} ` + err)
 })
