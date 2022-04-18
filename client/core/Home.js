@@ -69,6 +69,9 @@ export default function Home(){
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
            Home Page
+           <div>
+             <p>Here we see the beauty in the ugly animals of the world!</p>
+           </div>
           </Typography>
           <CardMedia className={classes.media} image={myImg} title="My Image"/>
           <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">Photo: Chompster</Typography>

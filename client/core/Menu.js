@@ -53,7 +53,7 @@ const Menu = withRouter(({history}) => (
       {
         auth.isAuthenticated() && (<span>
           <Link to="/Events">
-          <Button style={isActive(history, "/Events/" + auth.isAuthenticated().user._id)}>Events</Button>
+          <Button style={isActive(history, "/Events/" )}>Events</Button>
           </Link>
         </span>)
       }
