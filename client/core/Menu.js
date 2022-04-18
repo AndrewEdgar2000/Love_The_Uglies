@@ -50,6 +50,13 @@ const Menu = withRouter(({history}) => (
             }}>Sign out</Button>
         </span>)
       }
+      {
+        auth.isAuthenticated() && (<span>
+          <Link to="/Events">
+          <Button style={isActive(history, "/user/" + auth.isAuthenticated().user._id)}>Events</Button>
+          </Link>
+        </span>)
+      }
     </Toolbar>
   </AppBar>
 ))
