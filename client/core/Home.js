@@ -18,7 +18,8 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     padding:`${theme.spacing(3)}px ${theme.spacing(2.5)}px ${theme.spacing(2)}px`,
-    color: theme.palette.openTitle
+    color: theme.palette.openTitle,
+    textAlign: 'center'
   },
   media: {
     minHeight: 400
@@ -74,7 +75,7 @@ export default function Home(){
            </div>
           </Typography>
           <CardMedia className={classes.media} image={myImg} title="My Image"/>
-          <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">Photo: Chompster</Typography>
+          <Typography variant="body2" component="p" className={classes.credit} color="textSecondary"></Typography>
           <CardContent>
             <Typography variant="body1" component="p">
               Come back for a new dad joke!

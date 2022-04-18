@@ -9,7 +9,8 @@ import PrivateRoute from './auth/PrivateRoute'
 import Profile from './user/Profile'
 import EditProfile from './user/EditProfile'
 import UserAdmin from './user/UsersAdmin'
-import Events from './user/Events'
+import Events from './Events/Events'
+import Post from './Posts/post'
 
 const MainRouter = () => {
     return (<div>
@@ -20,6 +21,7 @@ const MainRouter = () => {
         <Route path="/signup" component={Signup}/>
         <Route path="/signin" component={Signin}/>
         <Route path="/events" component={Events}/>
+        <Route path="/post" component={Post}/>
         <PrivateRoute path="/user/edit/:userId" component={EditProfile}/>
         <Route path="/user/:userId" component={Profile}/>
         <Route path="/useradmin/:userId" component={UserAdmin}/>

@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography'
 import ArrowForward from '@material-ui/icons/ArrowForward'
 import Person from '@material-ui/icons/Person'
 import {Link} from 'react-router-dom'
-import {list} from './api-user.js'
+import {list} from '../user/api-user.js'
 
 const useStyles = makeStyles(theme => ({
   root: theme.mixins.gutters({
@@ -49,7 +49,7 @@ export default function Users() {
     return (
         <Paper className={classes.root} elevation={4}>
             <Typography variant="h6" className={classes.title}>
-                All Events
+                All Users
             </Typography>
             <List dense>
                 {users.map((item, i) => {
@@ -68,8 +68,7 @@ export default function Users() {
                                 </ListItemSecondaryAction>
                             </ListItem>
                         </Link>
-                }
-                )}
+                })}
             </List>
         </Paper>
     )
