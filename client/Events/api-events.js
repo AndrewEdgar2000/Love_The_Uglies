@@ -1,14 +1,15 @@
 //Create event
-const create = async (req, res) => {
+const create = async (req) => {
     try {
-        let newEvent = await fetch('/api/events/', {
+        let newEvent = await fetch('/api/events', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(req.body)
+            body: JSON.stringify(req)
         })
+        console.log("🚀 ~ file: api-events.js ~ line 13 ~ create ~ newEvent", req)
         return await newEvent.json()
     } catch (err) {
         console.log(err)
@@ -18,7 +19,7 @@ const create = async (req, res) => {
 //List all events
 const list = async (req, res) => {
     try {
-        let events = await fetch('/api/events/', {
+        let events = await fetch('/api/events', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',

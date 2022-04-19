@@ -4,7 +4,9 @@ import eventCtrl from '../controllers/event.controller';
 const router = express.Router();
 
 router.route('/api/events')
-    .get(eventCtrl.list)
+    .get(eventCtrl.list);
+
+router.route('/api/events')
     .post(eventCtrl.create);
 
 router.route('/api/events/:eventId')
