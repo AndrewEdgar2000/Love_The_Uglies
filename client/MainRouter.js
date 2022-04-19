@@ -12,6 +12,7 @@ import UserAdmin from './user/UsersAdmin'
 import Events from './Events/AllEvents'
 import AddEvent from './Events/AddEvent'
 import Post from './Posts/post'
+import AllPosts from './Posts/all-posts'
 
 
 const MainRouter = () => {
@@ -24,6 +25,7 @@ const MainRouter = () => {
         <Route path="/signin" component={Signin}/>
         <Route path="/events" component={Events}/>
         <Route path="/addevent" component={AddEvent}/>
+        <Route path="/all-posts" component={AllPosts}/>
         <Route path="/post" component={Post}/>
         <PrivateRoute path="/user/edit/:userId" component={EditProfile}/>
         <Route path="/user/:userId" component={Profile}/>

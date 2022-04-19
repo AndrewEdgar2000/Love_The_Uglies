@@ -53,20 +53,26 @@ const Menu = withRouter(({history}) => (
       {
         auth.isAuthenticated() && (<span>
           <Link to="/Events">
-          <Button style={isActive(history, "/Events/" )}>Events</Button>
+          <Button style={isActive(history, "/Events" )}>Events</Button>
           </Link>
         </span>)
       }
       {
         auth.isAuthenticated() && (<span>
           <Link to="/AddEvent">
-          <Button style={isActive(history, "/AddEvent/" )}>Add Event</Button>
+          <Button style={isActive(history, "/AddEvent" )}>Add Event</Button>
           </Link>
         </span>)
       }
       { auth.isAuthenticated() && (<span>
-          <Link to="/posts">
-          <Button style={isActive(history, "/posts/" )}>Post Comment</Button>
+          <Link to="/all-posts">
+          <Button style={isActive(history, "/all-posts" )}>Comments</Button>
+          </Link>
+        </span>)
+      }
+      { auth.isAuthenticated() && (<span>
+          <Link to="/post">
+          <Button style={isActive(history, "/post" )}>Post Comment</Button>
           </Link>
         </span>)
       }
