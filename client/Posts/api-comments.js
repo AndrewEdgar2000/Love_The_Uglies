@@ -28,8 +28,6 @@ const list = async (signal) => {
     }
 }
 
-
-
 //Get comment by id
 const commentByID = async (params, credentials, signal) => {
     try {

@@ -14,6 +14,9 @@ import Person from '@material-ui/icons/Person'
 import { Link } from 'react-router-dom'
 import { list } from './api-comments.js'
 import { values } from 'lodash'
+import { Edit } from '@material-ui/icons'
+import DeleteComment from './delete-post.js'
+import auth from './../auth/auth-helper'
 
 const useStyles = makeStyles(theme => ({
     root: theme.mixins.gutters({
@@ -62,11 +65,11 @@ export default function Comments() {
                                 </Avatar>
                             </ListItemAvatar>
                             <ListItemText primary={item.comment} secondary={item.created} />
+                            {
                             <ListItemSecondaryAction>
-                                <IconButton edge="end" aria-label="comments">
-                                    <ArrowForward />
-                                </IconButton>
+                                <DeleteComment commentId = {item.commentId}/>
                             </ListItemSecondaryAction>
+                            }
                         </ListItem>
                     </Link>
                 }
